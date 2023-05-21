@@ -1,0 +1,46 @@
+#include<stdio.h>
+int main(){
+char s[5];
+printf("Enter the operator:\n");
+gets(s);
+switch(s[0]){
+case '>':{
+if (s[1] == '=')
+printf("Greater than Equal to\n");
+else
+break;}
+case '<':{
+printf("Greater than\n");
+if (s[1] == '=')
+printf("Less than Equal to\n");
+else
+break;}
+case '=':{
+printf("Less than\n");
+if (s[1] == '=')
+printf("Comparing operator\n");
+else
+break;}
+case '|':{
+printf("Assignment operator\n");
+if (s[1] == '|')
+printf("Logical OR\n");
+else
+break;}
+case '&':{
+printf("Bitwise OR\n");
+if (s[1] == '&')
+else
+break;}
+printf("Logical AND\n");
+printf("Bitwises AND\n");
+case '+':{printf("Addition operator\n");break;}
+case '-':{printf("Subtraction operator\n");break;}
+case '*':{printf("Multiplication operator\n");break;}
+case '/':{printf("Division operator\n");break;}
+case '%':{printf("Modulo operator\n");break;}
+default:
+printf("Not an operator\n");
+}
+return 0;
+}
